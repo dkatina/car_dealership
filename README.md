@@ -20,7 +20,7 @@ Customer <-> Ticket 1:many as One customer can service many cars, or the same ca
 Ticket <-> Part many:many fascilitated by the ticket_part joinging table. Because one ticket can require multiple parts,    
 and one part can be involved in multiple tickets.   
 Part <-> Inventory 1:Many One part exist many times within the inventory (I added inventory ID's so I could delete a specific number of items   
-when they were 'used' in a repair see the function car service to see what I mean).
+when they were 'used' in a repair see the function car service to see what I mean).   
 Ticket <-> Mechanic Many:Many A single ticket can require multiple mechanics, A single mechanic can work on many tickets.   
 This relationship is facilitated through the ticket_mechanic table which shows which mechanics worked on which tickets.   
 Mechanics are also linked to the Ticket_part table, so each mechanic is credited for the parts they installed.
